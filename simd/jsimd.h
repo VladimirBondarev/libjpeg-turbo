@@ -2,7 +2,7 @@
  * simd/jsimd.h
  *
  * Copyright 2009 Pierre Ossman <ossman@cendio.se> for Cendio AB
- * Copyright (C) 2011, 2014-2016, D. R. Commander.
+ * Copyright (C) 2011, 2014-2016, 2018, D. R. Commander.
  * Copyright (C) 2013-2014, MIPS Technologies, Inc., California.
  * Copyright (C) 2014, Linaro Limited.
  * Copyright (C) 2015-2016, Matthieu Darbois.
@@ -855,6 +855,9 @@ EXTERN(void) jsimd_fdct_ifast_mmx (DCTELEM *data);
 
 extern const int jconst_fdct_ifast_sse2[];
 EXTERN(void) jsimd_fdct_ifast_sse2 (DCTELEM *data);
+
+extern const int jconst_fdct_ifast_avx2[];
+EXTERN(void) jsimd_fdct_ifast_avx2 (DCTELEM *data);
 
 EXTERN(void) jsimd_fdct_ifast_neon (DCTELEM *data);
 
